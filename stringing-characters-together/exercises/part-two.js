@@ -23,20 +23,20 @@ console.log(dna);
 let dnaTwo = "TCG-TAC-GAC-TAC-CGT-CAG-ACT-TAA-CCA-GTC-CAT-AGA-GCT";
 
 //1) Replace the gene "GCT" with "AGG", and then print the altered strand.
-dnaTwo = dnaTwo.replace('GCT', 'AGG')
-console.log(dnaTwo)
+dnaTwo = dnaTwo.replace('GCT', 'AGG');
+console.log(dnaTwo);
 
 //2) Look for the gene "CAT" with ``indexOf()``. If found print, "CAT gene found", otherwise print, "CAT gene NOT found".
 
 if(dnaTwo.indexOf('CAT')!== -1){
-    console.log("CAT gene found")
+    console.log("CAT gene found");
 
 }else{
-    console.log("CAT gene NOT found")
+    console.log("CAT gene NOT found");
 }
 
 //3) Use .slice() to print out the fifth gene (set of 3 characters) from the DNA strand.
-console.log(dna.slice(17,20))
+console.log(dna.slice(17,20));
 
 //4) Use a template literal to print, "The DNA strand is ___ characters long."
 
@@ -46,4 +46,4 @@ console.log(`The DNA strand is ${dna.length} characters long.`);
 console.log(dna);
 let dna1 = dna.toLowerCase().replace('-cgt','o cat');
 console.log(dna1.indexOf('taco cat'));
-console.log(`${dna1.slice(13,21)}`)
+console.log(`${dna1.slice(13,21)}`);
