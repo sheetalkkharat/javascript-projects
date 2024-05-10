@@ -10,8 +10,8 @@ function reverseCommas(commaString) {
 	//TODO: 1. create and instantiate your variables.
 	let check = commaString;
 	let output;
-	if(check.includes(",")){
-		check.split(",").reverse().join(",");
+	if (check.includes(",")) {
+		output = check.split(",").reverse().join(",");
 	}
 	//TODO: 2. write the code required for this step
 
