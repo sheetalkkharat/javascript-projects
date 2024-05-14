@@ -3,3 +3,9 @@
 for (let i = 0; i < 51; i++) {
    console.log(i);
  }
+
+
+
+ for (let i = 10; i < 51; i= i+4) {
+  console.log(i);
+}
