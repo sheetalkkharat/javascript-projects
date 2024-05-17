@@ -44,4 +44,3 @@
      output += "Failed to reach orbit."
  }
  console.log(output);
- 
