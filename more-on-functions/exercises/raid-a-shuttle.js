@@ -33,10 +33,25 @@ console.log("Hold status: " + holdStatus(cargoHold));
 
 //c). Once you figure out how much fuel to pump out, return that value.
 
-//d). Decide where to best place your function call to gather our new fuel.
+//d). Decide where to best place your function call to gather our new fuel.*/
+
+let nonSuspiciousFunction = function(a) {
+  if (checkFuel(a) === 'green') {
+     return a - 100001;
+  }
+  else if (checkFuel(a) === 'yellow') {
+     return a - 50001;
+  }
+  else {
+     return a;
+  }
+};
+
+console.log(nonSuspiciousFunction(1000));
 
 /* Next, liberate some of that glorious cargo.
  * /
+
 
 //a). Define another anonymous function with an array as a parameter, and set it equal to another innocent variable.
 
@@ -47,11 +62,38 @@ console.log("Hold status: " + holdStatus(cargoHold));
 //d). Don’t get hasty, matey! Remember to test your function.
 
 /* Finally, you need to print a receipt for the accountant. Don’t laugh! That genius knows MATH and saves us more gold than you can imagine.
- * /
+ * /*/
+ let itemsInCargo = function (arr) {
+  let newArr = arr.slice(); 
+  
+  newArr[3] = 'space suits'; 
+  newArr[4] = 'meal kits';   
+  
+  return newArr; 
+}
+
+
+
+let CargoHold1 = itemsInCargo(cargoHold);
+console.log(CargoHold1); 
+console.log(cargoHold); 
+
+
  
+let deckmop = itemsInCargo;
+
+console.log(itemsInCargo(cargoHold));
 //a). Define a function called irs that can take fuelLevel and cargoHold as arguments.
 	
 //b). Call your anonymous fuel and cargo functions from within irs.
 
-//c). Use a template literal to return, "Raided _____ kg of fuel from the tanks, and stole ____ and ____ from the cargo hold."
+//c). Use a template literal to return, "Raided _____ kg of fuel from the tanks, and stole ____ and ____ from the cargo hold."*/
+
+let irs = function(checkFuel, itemsInCargo) {
+  let arr = deckmop('cargoHold');
+  return `Raided ${nonSuspiciousFunction(fuelLevel)} kg of fuel from the tanks, and stole ${cargoHold[3]} and ${cargoHold[4]} from the cargo hold.`
+}
+
+console.log(irs(5000,cargoHold));
+console.log(cargoHold);
 
