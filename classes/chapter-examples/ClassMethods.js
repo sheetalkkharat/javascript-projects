@@ -30,3 +30,14 @@ class AstronautI {
  
  console.log(fox);
  console.log(hippo);
+
+ class Plant {
+  constructor(type, height) {
+     this.type = type;
+     this.height = height;
+  }
+
+  grow () {
+     this.height = this.height + 1;
+  }
+}

@@ -21,4 +21,4 @@ let studentLabs = [
   }
 ];
 
-gradeLabs(studentLabs);
+console.log(gradeLabs(studentLabs));
